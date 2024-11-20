@@ -1,0 +1,237 @@
+global:
+  hid_dim: 128
+  num_layers: 2
+  norm_type: none
+
+TMDB:
+  HGNN2MLP_ind:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0005
+  HGNN2MLP:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.000
+  MLP:
+    max_epoch: 50
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0005
+  RSAGE:
+    max_epoch: 50
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGCN:
+    max_epoch: 50
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGAT:
+    max_epoch: 50
+    num_heads: 4
+    attn_drop: 0.0
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+
+CroVal:
+  HGNN2MLP_ind:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.000
+  HGNN2MLP:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0
+  MLP:
+    max_epoch: 50
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0005
+  RSAGE:
+    max_epoch: 50
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGCN:
+    max_epoch: 50
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGAT:
+    max_epoch: 50
+    num_heads: 4
+    attn_drop: 0.0
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+
+ArXiv:
+  HGNN2MLP_ind:
+    max_epoch: 1000
+    num_layers: 3
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.000
+    norm_type: batch
+    hid_dim: 512
+  HGNN2MLP:
+    max_epoch: 1000
+    num_layers: 3
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0
+    norm_type: batch
+    hid_dim: 512
+  MLP:
+    max_epoch: 500
+    num_layers: 3
+    dropout: 0.2
+    learning_rate: 0.01
+    hid_dim: 512
+    weight_decay: 0.0005
+  RSAGE:
+    max_epoch: 100
+    num_layers: 3
+    dropout: 0.2
+    fan_out: [10, 15, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGCN:
+    max_epoch: 100
+    num_layers: 3
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGAT:
+    max_epoch: 100
+    num_layers: 3
+    num_heads: 4
+    attn_drop: 0.0
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+
+IGB-549K-19:
+  HGNN2MLP_ind:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.000
+  HGNN2MLP:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0
+  MLP:
+    max_epoch: 500
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0005
+  RSAGE:
+    max_epoch: 20
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGCN:
+    max_epoch: 20
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGAT:
+    max_epoch: 20
+    num_heads: 4
+    attn_drop: 0.0
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+
+IGB-549K-2K:
+  HGNN2MLP_ind:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.000
+  HGNN2MLP:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0
+  MLP:
+    max_epoch: 500
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0005
+  RSAGE:
+    max_epoch: 50
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGCN:
+    max_epoch: 50
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGAT:
+    max_epoch: 50
+    num_heads: 4
+    attn_drop: 0.0
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+
+IGB-3M-19:
+  HGNN2MLP_ind:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.000
+  HGNN2MLP:
+    max_epoch: 1000
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0
+  MLP:
+    max_epoch: 500
+    dropout: 0.2
+    learning_rate: 0.01
+    weight_decay: 0.0005
+  RSAGE:
+    max_epoch: 20
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGCN:
+    max_epoch: 20
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0
+  RGAT:
+    max_epoch: 20
+    num_heads: 4
+    attn_drop: 0.0
+    dropout: 0.2
+    fan_out: [10, 15]
+    learning_rate: 0.01
+    weight_decay: 0.0

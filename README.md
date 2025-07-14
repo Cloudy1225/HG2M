@@ -21,7 +21,7 @@ To run the code, please install the following libraries: dgl==2.4.0+cu124, torch
 
 All datasets are available under `data/`.
 
-- `TMDB`, `CroVal`, and `ArXiv` will be uploaded immediately once our manuscript is accepted.
+- `TMDB`, `CroVal`, and `ArXiv` have already been well-organized.
 - `IGB` datasets are provided by [IllinoisGraphBenchmark/IGB-Datasets](https://github.com/IllinoisGraphBenchmark/IGB-Datasets).
   1. Download [IGB-549K-19/2K](https://igb-public-awsopen.s3.amazonaws.com/igb-heterogeneous/igb_heterogeneous_tiny.tar.gz) and [IGB-3M-19](https://igb-public-awsopen.s3.amazonaws.com/igb-heterogeneous/igb_heterogeneous_small.tar.gz).
   2. Extract them to `data/igb/tiny/` and `data/igb/small/`, respectively.
